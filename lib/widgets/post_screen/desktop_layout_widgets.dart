@@ -7,16 +7,7 @@ import 'package:job_search_web/widgets/post_screen/side_bar_widgets.dart';
 import 'package:provider/provider.dart';
 import 'package:job_search_web/screens/profile_page.dart';
 
-/// Desktop Layout Widget - Layout optimized for desktop and tablet screens
-/// 
-/// Functions:
-/// - Arranges content in horizontal layout (main content + sidebar)
-/// - Provides proper spacing based on screen size (desktop/tablet)
-/// - Contains search section and posts list in main area
-/// - Places sidebar on the right with profile information
-/// - Handles responsive padding and flex ratios
-/// - Manages search functionality and provider state
-/// - Enables navigation to profile screen via sidebar click
+
 class DesktopLayoutWidget extends StatelessWidget {
   final bool isTablet;
   final bool isDesktop;

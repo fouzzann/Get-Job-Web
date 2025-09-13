@@ -4,6 +4,7 @@ import 'package:job_search_web/widgets/post_screen/post_content_widgets.dart';
 import 'package:job_search_web/widgets/post_screen/search_sessions.dart';
 import 'package:job_search_web/widgets/post_screen/side_bar_widgets.dart';
 import 'package:provider/provider.dart';
+
 class MobileLayoutWidget extends StatelessWidget {
   const MobileLayoutWidget({Key? key}) : super(key: key);
 
@@ -12,9 +13,14 @@ class MobileLayoutWidget extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          // Search Section - Top priority on mobile
+          // Search Section - Reduced top padding for closer placement to app bar
           Padding(
-            padding: const EdgeInsets.all(16),
+            padding: const EdgeInsets.only(
+              left: 16,
+              right: 16,
+              top: 8,  // Reduced from 16 to 8
+              bottom: 16,
+            ),
             child: SearchSection(
               onSearch: (userId, postId) {
                 // Trigger search in PostProvider
